@@ -65,6 +65,35 @@ export function FilterSidebar({ config, filters, onFilterChange }: FilterSidebar
     });
   };
 
+  // Hotel filter handlers
+  const handleStarRatingChange = (rating: number) => {
+    const currentRatings = filters.hotel.starRating;
+    const newRatings = currentRatings.includes(rating as 3 | 4 | 5)
+      ? currentRatings.filter((r) => r !== rating)
+      : [...currentRatings, rating as 3 | 4 | 5];
+    
+    onFilterChange({
+      ...filters,
+      hotel: {
+        ...filters.hotel,
+        starRating: newRatings,
+      },
+    });
+  };
+
+  const handleAmenityChange = (amenity: keyof HotelFilters['amenities']) => {
+    onFilterChange({
+      ...filters,
+      hotel: {
+        ...filters.hotel,
+        amenities: {
+          ...filters.hotel.amenities,
+          [amenity]: !filters.hotel.amenities[amenity],
+        },
+      },
+    });
+  };
+
   return (
     <aside className="w-full lg:w-60 flex flex-col gap-5 overflow-y-auto pr-4 py-2">
       {/* Search */}
@@ -161,6 +190,65 @@ export function FilterSidebar({ config, filters, onFilterChange }: FilterSidebar
           <option value={80}>80+</option>
           <option value={90}>90+</option>
         </select>
+      </div>
+
+      {/* Star Rating */}
+      <div className="flex flex-col gap-2">
+        <div className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">Star Rating</div>
+        <div className="flex gap-1.5">
+          {[5, 4, 3].map((rating) => (
+            <button
+              key={rating}
+              onClick={() => handleStarRatingChange(rating)}
+              className={`flex-1 py-2 rounded-md text-center text-xs transition-colors ${
+                filters.hotel.starRating.includes(rating as 3 | 4 | 5)
+                  ? 'bg-black text-white'
+                  : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+              }`}
+            >
+              {'★'.repeat(rating)}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Amenities */}
+      <div className="flex flex-col gap-2">
+        <div className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">Amenities</div>
+        <div className="flex flex-col gap-2">
+          {[
+            { key: 'skiInSkiOut', label: 'Ski-in / Ski-out' },
+            { key: 'breakfastIncluded', label: 'Breakfast included' },
+            { key: 'pool', label: 'Pool / Spa' },
+            { key: 'gym', label: 'Gym' },
+            { key: 'freeParking', label: 'Free parking' },
+          ].map((item) => (
+            <label key={item.key} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1 rounded">
+              <div className={`w-4 h-4 rounded flex items-center justify-center transition-colors ${
+                filters.hotel.amenities[item.key as keyof HotelFilters['amenities']]
+                  ? 'bg-black'
+                  : 'border border-gray-300'
+              }`}>
+                {filters.hotel.amenities[item.key as keyof HotelFilters['amenities']] && (
+                  <span className="text-white text-[10px]">&#10003;</span>
+                )}
+              </div>
+              <input
+                type="checkbox"
+                className="hidden"
+                checked={filters.hotel.amenities[item.key as keyof HotelFilters['amenities']]}
+                onChange={() => handleAmenityChange(item.key as keyof HotelFilters['amenities'])}
+              />
+              <span className={`text-xs ${
+                filters.hotel.amenities[item.key as keyof HotelFilters['amenities']]
+                  ? 'text-black font-medium'
+                  : 'text-gray-600'
+              }`}>
+                {item.label}
+              </span>
+            </label>
+          ))}
+        </div>
       </div>
     </aside>
   );
