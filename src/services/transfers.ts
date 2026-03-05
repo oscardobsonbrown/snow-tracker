@@ -18,10 +18,11 @@ interface TransferPricing {
 
 // Transfer pricing database
 const TRANSFER_PRICING: Record<string, TransferPricing> = {
-  // Japan
+// Japan
   'CTS': { airportCode: 'CTS', distance: 110, duration: 120, shuttle: 65, taxi: 350, private: 280, rental: 80 },
   'KIJ': { airportCode: 'KIJ', distance: 50, duration: 60, shuttle: 45, taxi: 180, private: 150, rental: 70 },
-  
+  'HNA': { airportCode: 'HNA', distance: 45, duration: 55, shuttle: 50, taxi: 190, private: 160, rental: 75 },
+  'GAJ': { airportCode: 'GAJ', distance: 35, duration: 45, shuttle: 40, taxi: 150, private: 125, rental: 70 },
   // Canada
   'YVR': { airportCode: 'YVR', distance: 135, duration: 150, shuttle: 120, taxi: 450, private: 380, rental: 90 },
   'YLW': { airportCode: 'YLW', distance: 30, duration: 35, shuttle: 65, taxi: 120, private: 100, rental: 85 },
@@ -39,8 +40,13 @@ const TRANSFER_PRICING: Record<string, TransferPricing> = {
   'ASE': { airportCode: 'ASE', distance: 10, duration: 15, shuttle: 35, taxi: 85, private: 70, rental: 110 },
   'JAC': { airportCode: 'JAC', distance: 15, duration: 20, shuttle: 45, taxi: 95, private: 80, rental: 105 },
   
-  // Austria
+// Austria
   'INN': { airportCode: 'INN', distance: 100, duration: 90, shuttle: 150, taxi: 380, private: 320, rental: 100 },
+  'SZG': { airportCode: 'SZG', distance: 85, duration: 80, shuttle: 130, taxi: 340, private: 290, rental: 95 },
+  
+  // Italy
+  'TRN': { airportCode: 'TRN', distance: 90, duration: 85, shuttle: 140, taxi: 360, private: 300, rental: 100 },
+  'MXP': { airportCode: 'MXP', distance: 180, duration: 160, shuttle: 240, taxi: 600, private: 520, rental: 110 },
 };
 
 /**

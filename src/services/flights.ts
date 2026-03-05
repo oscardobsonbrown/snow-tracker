@@ -18,9 +18,11 @@ interface RoutePricing {
 
 // Route pricing data from Perth (PER)
 const ROUTE_PRICING: Record<string, RoutePricing> = {
-  // Japan
+// Japan
   'CTS': { destinationCode: 'CTS', basePrice: 800, pricePerKm: 0.15, durationPerKm: 0.00012, typicalStops: 1 },
   'KIJ': { destinationCode: 'KIJ', basePrice: 850, pricePerKm: 0.16, durationPerKm: 0.00012, typicalStops: 1 },
+  'HNA': { destinationCode: 'HNA', basePrice: 870, pricePerKm: 0.16, durationPerKm: 0.00012, typicalStops: 1 },
+  'GAJ': { destinationCode: 'GAJ', basePrice: 860, pricePerKm: 0.16, durationPerKm: 0.00012, typicalStops: 1 },
   
   // Canada
   'YVR': { destinationCode: 'YVR', basePrice: 1200, pricePerKm: 0.12, durationPerKm: 0.00010, typicalStops: 1 },
@@ -39,8 +41,13 @@ const ROUTE_PRICING: Record<string, RoutePricing> = {
   'ASE': { destinationCode: 'ASE', basePrice: 1600, pricePerKm: 0.10, durationPerKm: 0.00009, typicalStops: 2 },
   'JAC': { destinationCode: 'JAC', basePrice: 1550, pricePerKm: 0.10, durationPerKm: 0.00009, typicalStops: 2 },
   
-  // Austria
+// Austria
   'INN': { destinationCode: 'INN', basePrice: 1450, pricePerKm: 0.11, durationPerKm: 0.00009, typicalStops: 1 },
+  'SZG': { destinationCode: 'SZG', basePrice: 1380, pricePerKm: 0.11, durationPerKm: 0.00009, typicalStops: 1 },
+  
+  // Italy
+  'TRN': { destinationCode: 'TRN', basePrice: 1320, pricePerKm: 0.11, durationPerKm: 0.00009, typicalStops: 1 },
+  'MXP': { destinationCode: 'MXP', basePrice: 1280, pricePerKm: 0.11, durationPerKm: 0.00009, typicalStops: 1 },
 };
 
 /**

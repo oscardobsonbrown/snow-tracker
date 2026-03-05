@@ -355,7 +355,94 @@ export const RESORT_HOTELS: Record<string, Hotel[]> = {
   'val-thorens': [
     { id: 'vt-lux', name: 'Hotel Koh-I Nor', chain: 'independent', starRating: 5, pricePerNight: 620, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: false }, coordinates: { lat: 45.2988, lng: 6.5838 } },
     { id: 'vt-mid', name: 'Hotel Fahrenheit 7', chain: 'independent', starRating: 4, pricePerNight: 320, distanceFromResort: 0.2, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: false }, coordinates: { lat: 45.299, lng: 6.584 } },
-    { id: 'vt-budget', name: 'Hotel Le Val Thorens', chain: 'independent', starRating: 3, pricePerNight: 180, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: false }, coordinates: { lat: 45.2995, lng: 6.5845 } },
+  ],
+  // ===== Japanese Kogen Resorts =====
+  'appi-kogen': [
+    { id: 'appi-lux', name: 'Appi Kogen Hotel', chain: 'independent', starRating: 4, pricePerNight: 280, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 40.007, lng: 140.934 } },
+    { id: 'appi-mid', name: 'Appi Grand Villa', chain: 'independent', starRating: 3, pricePerNight: 180, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 40.008, lng: 140.935 } },
+    { id: 'appi-budget', name: 'Appi Lodge', chain: 'independent', starRating: 3, pricePerNight: 110, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 40.009, lng: 140.936 } },
+  ],
+  'zao-onsen': [
+    { id: 'zao-lux', name: 'Zao Royal Hotel', chain: 'independent', starRating: 4, pricePerNight: 320, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 38.151, lng: 140.444 } },
+    { id: 'zao-mid', name: 'Zao Onsen Hotel', chain: 'independent', starRating: 3, pricePerNight: 190, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 38.152, lng: 140.445 } },
+    { id: 'zao-budget', name: 'Zao Youth Hostel', chain: 'independent', starRating: 3, pricePerNight: 75, distanceFromResort: 0.6, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 38.153, lng: 140.446 } },
+  ],
+  'shiga-kogen': [
+    { id: 'shiga-lux', name: 'Shiga Kogen Hotel', chain: 'independent', starRating: 4, pricePerNight: 260, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.752, lng: 138.512 } },
+    { id: 'shiga-mid', name: 'Prince Hotel East', chain: 'independent', starRating: 3, pricePerNight: 170, distanceFromResort: 0.2, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.753, lng: 138.513 } },
+    { id: 'shiga-budget', name: 'Shiga Lodge', chain: 'independent', starRating: 3, pricePerNight: 90, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.754, lng: 138.514 } },
+  ],
+  'nozawa-onsen': [
+    { id: 'nozawa-lux', name: 'Nozawa Grand Hotel', chain: 'independent', starRating: 4, pricePerNight: 290, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.922, lng: 138.453 } },
+    { id: 'nozawa-mid', name: 'Nozawa Onsen Lodge', chain: 'independent', starRating: 3, pricePerNight: 180, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.923, lng: 138.454 } },
+    { id: 'nozawa-budget', name: 'Nozawa Guesthouse', chain: 'independent', starRating: 3, pricePerNight: 85, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.924, lng: 138.455 } },
+  ],
+  'myoko-kogen': [
+    { id: 'myoko-lux', name: 'Myoko Kogen Hotel', chain: 'independent', starRating: 4, pricePerNight: 310, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.884, lng: 138.101 } },
+    { id: 'myoko-mid', name: 'Akakura Onsen Hotel', chain: 'independent', starRating: 3, pricePerNight: 195, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.885, lng: 138.102 } },
+    { id: 'myoko-budget', name: 'Myoko Lodge', chain: 'independent', starRating: 3, pricePerNight: 95, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.886, lng: 138.103 } },
+  ],
+  'madarao-kogen': [
+    { id: 'madarao-lux', name: 'Madarao Kogen Hotel', chain: 'independent', starRating: 3, pricePerNight: 220, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 36.867, lng: 138.434 } },
+    { id: 'madarao-mid', name: 'Madarao Lodge', chain: 'independent', starRating: 3, pricePerNight: 150, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.868, lng: 138.435 } },
+    { id: 'madarao-budget', name: 'Madarao Pension', chain: 'independent', starRating: 3, pricePerNight: 80, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: false, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 36.869, lng: 138.436 } },
+  ],
+  // ===== Austrian Independent Resorts =====
+  'saalbach-hinterglemm': [
+    { id: 'saalbach-lux', name: 'Hotel Saalbacher Hof', chain: 'independent', starRating: 5, pricePerNight: 420, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: true }, coordinates: { lat: 47.391, lng: 12.64 } },
+    { id: 'saalbach-mid', name: 'Hotel Berner', chain: 'independent', starRating: 4, pricePerNight: 260, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 47.392, lng: 12.641 } },
+    { id: 'saalbach-budget', name: 'Pension Hinterglemm', chain: 'independent', starRating: 3, pricePerNight: 130, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 47.393, lng: 12.642 } },
+  ],
+  'ischgl': [
+    { id: 'ischgl-lux', name: 'Hotel Trofana Royal', chain: 'independent', starRating: 5, pricePerNight: 580, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: true }, coordinates: { lat: 46.994, lng: 10.294 } },
+    { id: 'ischgl-mid', name: 'Hotel Yscla', chain: 'independent', starRating: 4, pricePerNight: 320, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.995, lng: 10.295 } },
+    { id: 'ischgl-budget', name: 'Pension Ischgl', chain: 'independent', starRating: 3, pricePerNight: 160, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 46.996, lng: 10.296 } },
+  ],
+  'kitzbuhel': [
+    { id: 'kitz-lux', name: 'Arlberg Hospiz', chain: 'independent', starRating: 5, pricePerNight: 650, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: true }, coordinates: { lat: 47.446, lng: 12.395 } },
+    { id: 'kitz-mid', name: 'Hotel Weisses Rössl', chain: 'independent', starRating: 4, pricePerNight: 380, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: false }, coordinates: { lat: 47.447, lng: 12.396 } },
+    { id: 'kitz-budget', name: 'Pension Kitzbühel', chain: 'independent', starRating: 3, pricePerNight: 175, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 47.448, lng: 12.397 } },
+  ],
+  'solden': [
+    { id: 'solden-lux', name: 'Hotel Bergland', chain: 'independent', starRating: 4, pricePerNight: 340, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.971, lng: 11.009 } },
+    { id: 'solden-mid', name: 'Hotel Tyrol', chain: 'independent', starRating: 3, pricePerNight: 210, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.972, lng: 11.01 } },
+    { id: 'solden-budget', name: 'Pension Sölden', chain: 'independent', starRating: 3, pricePerNight: 95, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 46.973, lng: 11.011 } },
+  ],
+  'lech-zurs': [
+    { id: 'lech-lux', name: 'Hotel Arlberg', chain: 'independent', starRating: 5, pricePerNight: 520, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: true }, coordinates: { lat: 47.207, lng: 10.166 } },
+    { id: 'lech-mid', name: 'Hotel Goldener Berg', chain: 'independent', starRating: 4, pricePerNight: 290, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 47.208, lng: 10.167 } },
+    { id: 'lech-budget', name: 'Pension Lech', chain: 'independent', starRating: 3, pricePerNight: 145, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 47.209, lng: 10.168 } },
+  ],
+  'obergurgl-hochgurgl': [
+    { id: 'obergurgl-lux', name: 'Hotel Crystal', chain: 'independent', starRating: 4, pricePerNight: 380, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.867, lng: 11.017 } },
+    { id: 'obergurgl-mid', name: 'Hotel Olympia', chain: 'independent', starRating: 3, pricePerNight: 230, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.868, lng: 11.018 } },
+    { id: 'obergurgl-budget', name: 'Pension Obergurgl', chain: 'independent', starRating: 3, pricePerNight: 105, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 46.869, lng: 11.019 } },
+  ],
+  'mayrhofen': [
+    { id: 'mayrhofen-lux', name: 'Hotel Elisabeth', chain: 'independent', starRating: 4, pricePerNight: 320, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: true }, coordinates: { lat: 47.169, lng: 11.866 } },
+    { id: 'mayrhofen-mid', name: 'Hotel Neue Post', chain: 'independent', starRating: 3, pricePerNight: 195, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 47.17, lng: 11.867 } },
+    { id: 'mayrhofen-budget', name: 'Pension Mayrhofen', chain: 'independent', starRating: 3, pricePerNight: 90, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 47.171, lng: 11.868 } },
+  ],
+  // ===== Additional European Resorts =====
+  'courchevel': [
+    { id: 'courchevel-lux', name: 'Les Airelles', chain: 'independent', starRating: 5, pricePerNight: 1200, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: true, freeParking: false }, coordinates: { lat: 45.411, lng: 6.635 } },
+    { id: 'courchevel-mid', name: 'Hotel Chabichou', chain: 'independent', starRating: 4, pricePerNight: 480, distanceFromResort: 0.2, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: false }, coordinates: { lat: 45.412, lng: 6.636 } },
+    { id: 'courchevel-budget', name: 'Hotel Le Pilatus', chain: 'independent', starRating: 3, pricePerNight: 220, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 45.413, lng: 6.637 } },
+  ],
+  'cervinia': [
+    { id: 'cervinia-lux', name: 'Hotel Cervinia', chain: 'independent', starRating: 4, pricePerNight: 380, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 45.938, lng: 7.629 } },
+    { id: 'cervinia-mid', name: 'Hotel Bucaneve', chain: 'independent', starRating: 3, pricePerNight: 210, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 45.939, lng: 7.63 } },
+    { id: 'cervinia-budget', name: 'Pension Cervinia', chain: 'independent', starRating: 3, pricePerNight: 95, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 45.94, lng: 7.631 } },
+  ],
+  'livigno': [
+    { id: 'livigno-lux', name: 'Hotel Livigno', chain: 'independent', starRating: 4, pricePerNight: 290, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.537, lng: 10.139 } },
+    { id: 'livigno-mid', name: 'Hotel Lac Salin', chain: 'independent', starRating: 3, pricePerNight: 175, distanceFromResort: 0.3, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.538, lng: 10.14 } },
+    { id: 'livigno-budget', name: 'Pension Livigno', chain: 'independent', starRating: 3, pricePerNight: 85, distanceFromResort: 0.5, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 46.539, lng: 10.141 } },
+  ],
+  'alta-badia': [
+    { id: 'altabadia-lux', name: 'Hotel Gardena', chain: 'independent', starRating: 4, pricePerNight: 350, distanceFromResort: 0.1, amenities: { skiInSkiOut: true, breakfastIncluded: true, pool: true, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.554, lng: 11.872 } },
+    { id: 'altabadia-mid', name: 'Hotel Col Alto', chain: 'independent', starRating: 3, pricePerNight: 195, distanceFromResort: 0.2, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: true, gym: false, freeParking: true }, coordinates: { lat: 46.555, lng: 11.873 } },
+    { id: 'altabadia-budget', name: 'Pension Alta Badia', chain: 'independent', starRating: 3, pricePerNight: 90, distanceFromResort: 0.4, amenities: { skiInSkiOut: false, breakfastIncluded: true, pool: false, spa: false, gym: false, freeParking: true }, coordinates: { lat: 46.556, lng: 11.874 } },
   ],
 };
 
